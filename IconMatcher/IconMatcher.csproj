@@ -57,18 +57,56 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\libraries\bootstrap\css\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Assets\libraries\bootstrap\css\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Assets\libraries\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\libraries\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\libraries\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\libraries\bootstrap\js\npm.js" />
+    <Content Include="Assets\libraries\icons\fonts\untitled-font-1.svg" />
+    <Content Include="Assets\libraries\icons\icons-reference.html" />
+    <Content Include="Assets\libraries\icons\styles.css" />
+    <Content Include="Assets\libraries\angular\angular-csp.css" />
+    <Content Include="Assets\libraries\angular\angular.js" />
+    <Content Include="Assets\libraries\angular\angular.min.js" />
+    <Content Include="Assets\libraries\angular\index.js" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\libraries\icons\fonts\untitled-font-1.eot" />
+    <Content Include="Assets\libraries\icons\fonts\untitled-font-1.ttf" />
+    <Content Include="Assets\libraries\icons\fonts\untitled-font-1.woff" />
+    <Content Include="Assets\libraries\angular\angular.min.js.gzip" />
+    <Content Include="Assets\libraries\angular\angular.min.js.map" />
+    <Content Include="Assets\libraries\angular\bower.json" />
+    <Content Include="Assets\libraries\angular\package.json" />
+    <Content Include="Assets\libraries\angular\README.md" />
+    <Content Include="Assets\libraries\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\libraries\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\libraries\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\libraries\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\libraries\bootstrap\css\bootstrap.less" />
+    <Content Include="Assets\libraries\bootstrap\css\bootstrap.css.map">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\fonts\" />
+    <Folder Include="Assets\js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
