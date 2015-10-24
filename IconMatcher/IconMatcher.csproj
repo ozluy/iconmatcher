@@ -57,6 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\img\dev\ozluy.jpg" />
+    <Content Include="Assets\img\dev\sipahi.jpg" />
+    <Content Include="Assets\img\tech\angular.png" />
+    <Content Include="Assets\img\tech\css3.png" />
+    <Content Include="Assets\img\tech\HTML5.png" />
+    <Content Include="Assets\img\tech\softnero.ico" />
     <Content Include="Assets\libraries\bootstrap\css\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
