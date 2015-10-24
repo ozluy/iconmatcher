@@ -60,6 +60,12 @@
     <Content Include="app\baseApp.js" />
     <Content Include="app\events\click-icon-controller.js" />
     <Content Include="app\events\click-icon-module.js" />
+    <Content Include="Assets\img\dev\ozluy.jpg" />
+    <Content Include="Assets\img\dev\sipahi.jpg" />
+    <Content Include="Assets\img\tech\angular.png" />
+    <Content Include="Assets\img\tech\css3.png" />
+    <Content Include="Assets\img\tech\HTML5.png" />
+    <Content Include="Assets\img\tech\softnero.ico" />
     <Content Include="Assets\libraries\bootstrap\css\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
@@ -77,8 +83,86 @@
     <Content Include="Assets\libraries\angular\angular.js" />
     <Content Include="Assets\libraries\angular\angular.min.js" />
     <Content Include="Assets\libraries\angular\index.js" />
-    <Content Include="Assets\libraries\jquery\jquery-1.11.3.js" />
     <Content Include="index.html" />
+    <Content Include="Assets\libraries\animate.css\animate.css" />
+    <Content Include="Assets\libraries\animate.css\animate.min.css" />
+    <Content Include="Assets\libraries\animate.css\Gruntfile.js" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\bounce.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\flash.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\jello.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\pulse.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\rubberBand.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\shake.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\swing.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\tada.css" />
+    <Content Include="Assets\libraries\animate.css\source\attention_seekers\wobble.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_entrances\bounceIn.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_entrances\bounceInDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_entrances\bounceInLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_entrances\bounceInRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_entrances\bounceInUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_exits\bounceOut.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_exits\bounceOutDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_exits\bounceOutLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_exits\bounceOutRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\bouncing_exits\bounceOutUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeIn.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInDownBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInLeftBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInRightBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_entrances\fadeInUpBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOut.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutDownBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutLeftBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutRightBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\fading_exits\fadeOutUpBig.css" />
+    <Content Include="Assets\libraries\animate.css\source\flippers\flip.css" />
+    <Content Include="Assets\libraries\animate.css\source\flippers\flipInX.css" />
+    <Content Include="Assets\libraries\animate.css\source\flippers\flipInY.css" />
+    <Content Include="Assets\libraries\animate.css\source\flippers\flipOutX.css" />
+    <Content Include="Assets\libraries\animate.css\source\flippers\flipOutY.css" />
+    <Content Include="Assets\libraries\animate.css\source\lightspeed\lightSpeedIn.css" />
+    <Content Include="Assets\libraries\animate.css\source\lightspeed\lightSpeedOut.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_entrances\rotateIn.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_entrances\rotateInDownLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_entrances\rotateInDownRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_entrances\rotateInUpLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_entrances\rotateInUpRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_exits\rotateOut.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_exits\rotateOutDownLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_exits\rotateOutDownRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_exits\rotateOutUpLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\rotating_exits\rotateOutUpRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_entrances\slideInDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_entrances\slideInLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_entrances\slideInRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_entrances\slideInUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_exits\slideOutDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_exits\slideOutLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_exits\slideOutRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\sliding_exits\slideOutUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\specials\hinge.css" />
+    <Content Include="Assets\libraries\animate.css\source\specials\rollIn.css" />
+    <Content Include="Assets\libraries\animate.css\source\specials\rollOut.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_entrances\zoomIn.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_entrances\zoomInDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_entrances\zoomInLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_entrances\zoomInRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_entrances\zoomInUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOut.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOutDown.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOutLeft.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOutRight.css" />
+    <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOutUp.css" />
+    <Content Include="Assets\libraries\animate.css\source\_base.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +185,12 @@
     <Content Include="Assets\libraries\bootstrap\css\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
+    <Content Include="Assets\libraries\animate.css\.editorconfig" />
+    <Content Include="Assets\libraries\animate.css\.npmignore" />
+    <Content Include="Assets\libraries\animate.css\animate-config.json" />
+    <Content Include="Assets\libraries\animate.css\bower.json" />
+    <Content Include="Assets\libraries\animate.css\package.json" />
+    <Content Include="Assets\libraries\animate.css\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,6 +201,7 @@
   <ItemGroup>
     <Folder Include="Assets\fonts\" />
     <Folder Include="Assets\js\" />
+    <Folder Include="node_modules\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

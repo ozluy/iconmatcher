@@ -32,7 +32,7 @@
             if (preClick == dataIcon) {
                 winner(index, preIndex);
             } else {
-                //allCloseIcon();
+                allCloseIcon();
             }
 
             clickCount = 0;
@@ -72,8 +72,8 @@
         angular.element(element).each(function (i, v) {
 
             if (i == index) {
-                angular.element(element[i]).css('background-color', 'green');
-                angular.element(element[preIndex]).css('background-color', 'green');
+                angular.element(element[i]).css('background-color', '#f2f2f2');
+                angular.element(element[preIndex]).css('background-color', '#f2f2f2');
             }
         })
     }

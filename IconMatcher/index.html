@@ -7,7 +7,7 @@
     <link href="Assets/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Assets/libraries/icons/styles.css" rel="stylesheet" />
 
-
+    
     <!--Angular-->
     <script src="Assets/libraries/angular/angular.js"></script>
     <!--Angular-->
@@ -21,14 +21,15 @@
 
 </head>
 <body ng-app="baseApp">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="container">
+
+       <div class="row">
+           <div class="col-md-12">
                 <div class="game-shell" ng-controller="ClickIconCtrl as CIC">
                     <!--{{CIC.ExampleText}}-->
                     <!--use to active class - icon-item-opened-->
 
-                    <ul class="icon-item-group">
+                   <ul class="icon-item-group">
                         <li ng-click="CIC.SetClick('a','icon-heart',0)" class="icon-item"> <span data-icon="a" class="icon-heart"></span> </li>
                         <li ng-click="CIC.SetClick('b','icon-clock',1)" class="icon-item"> <span data-icon="b" class="icon-clock"></span> </li>
                         <li ng-click="CIC.SetClick('c','icon-truck',2)" class="icon-item"> <span data-icon="c" class="icon-truck"></span> </li>
@@ -45,13 +46,14 @@
                         <li ng-click="CIC.SetClick('f','icon-star',13)" class="icon-item"> <span data-icon="f" class="icon-star"></span> </li>
                         <li ng-click="CIC.SetClick('g','icon-paperplane',14)" class="icon-item"> <span data-icon="g" class="icon-paperplane"></span> </li>
                         <li ng-click="CIC.SetClick('h','icon-fire',15)" class="icon-item"> <span data-icon="h" class="icon-fire"></span> </li>
-                    </ul>
+                   </ul>
+                  
+              
+               </div>
+           </div>
+       </div>
 
-                </div>
-            </div>
         </div>
-
-    </div>
 
 
 

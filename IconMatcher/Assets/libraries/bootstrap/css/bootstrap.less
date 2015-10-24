@@ -13,7 +13,7 @@
     .icon-item-group {
         list-style: none;
         padding-left: 0;
-
+        text-align:center;
         .icon-item {
             float: left;
             width: 100px;
@@ -24,12 +24,20 @@
             text-align: center;
             border: 1px solid #fff;
             background-color: ActiveCaption;
+            transition:all fli 2s;
 
             span {
                 font-size: 50px;
                 line-height: 100px;
                 color: ActiveCaption;
             }
+            img{
+                width: calc(~"100% - 10px");
+                height:auto;
+            }
+            /*&:hover{
+                  background-color: red;
+            }*/
         }
 
         .icon-item-opened {
@@ -4009,10 +4017,48 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fff;
 }
 
+.coming-soon {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.developer-group {
+    width: 100%;
+    float: left;
+
+    .developer-item {
+        float: left;
+        width: 40%;
+
+        img {
+            border: solid 5px ActiveCaption;
+            width: 100%;
+        }
+    }
+
+    .developer-item:nth-child(2) {
+        margin-left: 20%;
+    }
+}
+
 .btn-success {
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
+}
+
+.btn-red {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0101;
+}
+
+.btn-red:focus,
+.btn-red:hover {
+    color: #fff !important;
+    background-color: #f00000 !important;
+    border-color: #f00101 !important;
 }
 
 .btn-success:focus,
