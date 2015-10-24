@@ -23,6 +23,10 @@
   text-align: center;
   border: 1px solid #fff;
   background-color: ActiveCaption;
+  transition: all ease-in-out 2s;
+  /*&:hover{
+                  background-color: red;
+            }*/
 }
 .game-shell .icon-item-group .icon-item span {
   font-size: 50px;
@@ -32,9 +36,6 @@
 .game-shell .icon-item-group .icon-item img {
   width: calc(100% - 10px);
   height: auto;
-}
-.game-shell .icon-item-group .icon-item:hover {
-  background-color: red;
 }
 .game-shell .icon-item-group .icon-item-opened {
   background-color: red;
