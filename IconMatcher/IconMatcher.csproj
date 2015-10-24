@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\baseApp.js" />
+    <Content Include="app\events\click-icon-controller.js" />
+    <Content Include="app\events\click-icon-module.js" />
     <Content Include="Assets\libraries\bootstrap\css\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
@@ -74,6 +77,7 @@
     <Content Include="Assets\libraries\angular\angular.js" />
     <Content Include="Assets\libraries\angular\angular.min.js" />
     <Content Include="Assets\libraries\angular\index.js" />
+    <Content Include="Assets\libraries\jquery\jquery-1.11.3.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
