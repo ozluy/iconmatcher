@@ -28,6 +28,9 @@
                 <div class="game-shell" ng-controller="ClickIconCtrl as CIC">
                     <!--{{CIC.ExampleText}}-->
                     <!--use to active class - icon-item-opened-->
+                    <div class="coming-soon">
+                        <button class="btn btn-lg btn-block btn-red">IconMatcher</button>
+                    </div>
                     <button class="btn btn-lg btn-block btn-success game-result"> Well Done</button>
                    <ul class="icon-item-group">
                         <li ng-click="CIC.SetClick('a',0)" class="icon-item"> <span data-icon="a" class="icon-heart"></span> </li>
@@ -50,7 +53,37 @@
                         <li ng-click="CIC.SetClick('g',14)" class="icon-item"> <span data-icon="g" class="icon-paperplane"></span> </li>
                         <li ng-click="CIC.SetClick('h',15)" class="icon-item"> <span data-icon="h" class="icon-fire"></span> </li>
                    </ul>
-                  
+                    <div class="coming-soon">
+                        <button class="btn btn-lg btn-block btn-success">Developers</button>
+                        <br>
+                    </div>
+                    <div class="developer-group">
+                        <div class="developer-item">
+                            <img class="img-circle" src="Assets/img/dev/ozluy.jpg">
+                            <h4 class="btn btn-block btn-red">Yusuf Özlü</h4>
+                        </div>
+                        <div class="developer-item">
+                            <img class="img-circle" src="Assets/img/dev/sipahi.jpg">
+                            <h4 class="btn btn-block btn-red">Semih Sipahi</h4>
+                        </div>
+                    </div>
+                    <div class="coming-soon">
+                        <button class="btn btn-lg btn-block btn-red">Partners</button>
+                    </div>
+                    <ul class="icon-item-group group_tech">
+                        <li class="icon-item">
+                            <img src="Assets/img/tech/angular.png">
+                        </li>
+                        <li class="icon-item">
+                            <img src="Assets/img/tech/css3.png">
+                        </li>
+                        <li class="icon-item">
+                            <img src="Assets/img/tech/HTML5.png">
+                        </li>
+                        <li class="icon-item">
+                            <a href="http://softnero.com"><img src="Assets/img/tech/softnero.ico"></a>
+                        </li>
+                    </ul>
               
                </div>
            </div>
