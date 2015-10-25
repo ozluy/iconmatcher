@@ -5,9 +5,7 @@
         .module('baseApp.click-icon-module')
         .controller('ClickIconCtrl', ClickIconCtrl)
 
-    var clickCount = 0;
-    var preIndex = 0;
-    var preClick = "";
+   
 
     function ClickIconCtrl() {
 
@@ -19,62 +17,83 @@
 
     }
 
-    function SetClick(dataIcon, dataClass, index) {
+    var clickCount = 0;
+    var specialCount = 0;
+    var preIndex = 0;
+    var preIcon = "";
+    var totalMatch = 0;
+    function SetClick(currentIcon, currentIndex) {
+        var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
+        var successBtn = angular.element('.container > .row > .col-md-12 > .game-shell > .btn-success');
+        console.log("Click Count:" + clickCount);
+        if (clickCount == 69) {
+            closeAllIcons();
+            preIcon = currentIcon;
+            preIndex = currentIndex;
+            openIcon(currentIndex);
+            specialCount = 1;
+        }
         clickCount++;
-        openIcon(index);
-
         if (clickCount == 1) {
-            preClick = dataIcon;
-            preIndex = index;
+            preIcon = currentIcon;
+            preIndex = currentIndex;
+            openIcon(currentIndex);
         }
-
         if (clickCount == 2) {
-            if (preClick == dataIcon) {
-                winner(index, preIndex);
-            } else {
-                allCloseIcon();
+            if (currentIndex != preIndex) {
+                if (currentIcon != preIcon) {
+                    openIcon(currentIndex);
+                    clickCount = 69;
+                }
+                else {
+                    clickCount = 0;
+                    matched(currentIndex, preIndex);                   
+                    angular.element(element[currentIndex]).addClass('disable-event');
+                    angular.element(element[preIndex]).addClass('disable-event');
+                    totalMatch++;
+                    console.log("Total Match:" + totalMatch);
+                    if (totalMatch == 8) {
+                        angular.element(successBtn).addClass('animated flash infinite show');
+                    }
+                    
+                }
             }
-
-            clickCount = 0;
+            else {
+                clickCount--;
+            }
         }
+        if (specialCount > 0) {
+            clickCount = specialCount;
+            specialCount = 0;
+        }
+        
     };
 
     function openIcon(index) {
         var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
 
-        angular.element(element).each(function (i, v) {
+        angular.element(element).each(function () {
 
-            if (i == index)
-                angular.element(element[i]).addClass('icon-item-opened');
-
+            
+                angular.element(element[index]).addClass('icon-item-opened animated flip');
         })
     };
 
-    function closeIcon(index) {
+ 
+    function closeAllIcons() {
         var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
-
-        angular.element(element).each(function (i, v) {
-
-            if (i == index)
-                angular.element(element[i]).removeClass('icon-item-opened');
-
-        })
+        angular.element(element).removeClass('icon-item-opened animated flip');
     };
-
-    function allCloseIcon() {
-        var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
-        angular.element(element).removeClass('icon-item-opened');
-    };
-
-    function winner(index, preIndex) {
+   
+    function matched(index, preIndex) {
         var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
 
-        angular.element(element).each(function (i, v) {
+        angular.element(element).each(function () {
+            angular.element(element[index]).removeClass('icon-item-opened animated flip');
+            angular.element(element[index]).addClass('icon-item-matched animated flash');
+            angular.element(element[preIndex]).removeClass('icon-item-opened animated flip');
+            angular.element(element[preIndex]).addClass('icon-item-matched animated flash');
 
-            if (i == index) {
-                angular.element(element[i]).css('background-color', '#f2f2f2');
-                angular.element(element[preIndex]).css('background-color', '#f2f2f2');
-            }
         })
     }
 

@@ -23,7 +23,7 @@
   text-align: center;
   border: 1px solid #fff;
   background-color: ActiveCaption;
-  transition: all ease-in-out 2s;
+  animation-duration: .5s !important;
   /*&:hover{
                   background-color: red;
             }*/
@@ -39,6 +39,12 @@
 }
 .game-shell .icon-item-group .icon-item-opened {
   background-color: red;
+}
+.game-shell .icon-item-group .icon-item-matched {
+  background-color: #5cb85c !important;
+}
+.disable-event {
+  pointer-events: none;
 }
 html {
   font-family: sans-serif;
@@ -6949,4 +6955,7 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.game-result {
+  display: none;
+}
 /*# sourceMappingURL=bootstrap.css.map */

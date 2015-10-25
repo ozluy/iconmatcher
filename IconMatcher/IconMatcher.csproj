@@ -163,6 +163,7 @@
     <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOutRight.css" />
     <Content Include="Assets\libraries\animate.css\source\zooming_exits\zoomOutUp.css" />
     <Content Include="Assets\libraries\animate.css\source\_base.css" />
+    <Content Include="test.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +192,8 @@
     <Content Include="Assets\libraries\animate.css\bower.json" />
     <Content Include="Assets\libraries\animate.css\package.json" />
     <Content Include="Assets\libraries\animate.css\README.md" />
+    <Content Include="Assets\libraries\animate.css\animate.less" />
+    <Content Include="Assets\libraries\animate.css\animate.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

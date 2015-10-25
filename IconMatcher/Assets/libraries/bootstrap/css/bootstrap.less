@@ -24,7 +24,7 @@
             text-align: center;
             border: 1px solid #fff;
             background-color: ActiveCaption;
-            transition:all fli 2s;
+            animation-duration: .5s !important;
 
             span {
                 font-size: 50px;
@@ -43,13 +43,15 @@
         .icon-item-opened {
             background-color: red;
         }
+         .icon-item-matched {
+          background-color: #5cb85c !important;
+        }
     }
 }
 
-
-
-
-
+.disable-event{
+    pointer-events:none;
+}
 
 
 
@@ -8329,3 +8331,7 @@ button.close {
     }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.game-result{
+    display:none;
+}
