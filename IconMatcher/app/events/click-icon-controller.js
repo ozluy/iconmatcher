@@ -75,23 +75,23 @@
         angular.element(element).each(function () {
 
             
-                angular.element(element[index]).addClass('icon-item-opened animated flip');
+                angular.element(element[index]).addClass('icon-item-opened animated flipInX');
         })
     };
 
  
     function closeAllIcons() {
         var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
-        angular.element(element).removeClass('icon-item-opened animated flip');
+        angular.element(element).removeClass('icon-item-opened animated flipInX');
     };
    
     function matched(index, preIndex) {
         var element = angular.element('.container > .row > .col-md-12 > .game-shell > .icon-item-group > li');
 
         angular.element(element).each(function () {
-            angular.element(element[index]).removeClass('icon-item-opened animated flip');
+            angular.element(element[index]).removeClass('icon-item-opened animated flipInX');
             angular.element(element[index]).addClass('icon-item-matched animated flash');
-            angular.element(element[preIndex]).removeClass('icon-item-opened animated flip');
+            angular.element(element[preIndex]).removeClass('icon-item-opened animated flipInX');
             angular.element(element[preIndex]).addClass('icon-item-matched animated flash');
 
         })

@@ -39,9 +39,11 @@
 }
 .game-shell .icon-item-group .icon-item-opened {
   background-color: red;
+  color: #fff !important;
 }
 .game-shell .icon-item-group .icon-item-matched {
   background-color: #5cb85c !important;
+  color: #fff !important;
 }
 .disable-event {
   pointer-events: none;
